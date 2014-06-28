@@ -11,7 +11,8 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('layout.base');
-});
+/*不需要登录即可浏览的页面 auth is not required*/
+
+Route::get('/', 'HomeController@showWelcome');
+
+Route::get('contactus','HomeController@showContactus');
