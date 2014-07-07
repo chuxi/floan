@@ -2,5 +2,6 @@
 
 @section('content')
 
+@include('includes.protable')
 
 @stop

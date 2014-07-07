@@ -15,4 +15,30 @@
 
 Route::get('/', 'HomeController@showWelcome');
 
+
+
+Route::get('licai', 'ProjectsController@showTable');
+
+Route::get('baozhang', 'HomeController@showBaozhang');
+
+Route::get('rongzi', 'HomeController@showRongzi');
+
+Route::get('aboutus', 'HomeController@showAboutus');
+
+
+
+
+Route::get('tuandui', 'HomeController@showTuandui');
+
+Route::get('gonggao', 'HomeController@showGonggao');
+
+Route::get('jieshao', 'HomeController@showJieshao');
+
+Route::get('danbao', 'HomeController@showDanbao');
+
 Route::get('contactus','HomeController@showContactus');
+
+Route::get('project/{id}', 'ProjectsController@show');
+
+
+

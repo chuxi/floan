@@ -25,4 +25,45 @@ class HomeController extends BaseController {
         return View::make('homes.contactus');
     }
 
+    public function showLicai()
+    {
+
+        return View::make('homes.licai');
+    }
+
+    public function showRongzi()
+    {
+        return View::make('homes.rongzi');
+    }
+
+    public function showBaozhang()
+    {
+        return View::make('homes.baozhang');
+    }
+
+    public function showAboutus()
+    {
+        return View::make('homes.aboutus');
+    }
+
+    public function showTuandui()
+    {
+        return View::make('homes.tuandui');
+    }
+
+    public function showDanbao()
+    {
+        return View::make('homes.danbao');
+    }
+
+    public function showGonggao()
+    {
+        return View::make('homes.gonggao');
+    }
+
+    public function showJieshao()
+    {
+        return View::make('homes.jieshao');
+    }
+
 }

@@ -34,9 +34,10 @@
 
 @section('footer')
 
-<div class="container">
+<hr>
+
     @include('includes.footer')
-</div>
+
 
     @include('includes.scripts')
 

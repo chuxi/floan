@@ -4,7 +4,22 @@ body {
     color: #5a5a5a;
 }
 
+a{color:#666;outline:0 none}a:link{color:#666;outline:0 none}
+a:hover{color:#d14836;text-decoration:none}
 
+.footerdown{
+    padding: 50px 0px 0px 0px;
+
+}
+
+.footerdown ul {
+    list-style: none;
+    padding: 10px;
+}
+
+.footerdown ul li {
+    padding: 5px 10px;
+}
 
 
 /* Carousel base class */
@@ -51,4 +66,102 @@ body {
 .marketing .col-lg-4 p {
     margin-left: 10px;
     margin-right: 10px;
+}
+
+.propanel {
+    margin: 40px 80px 20px 80px;
+}
+
+.propanel table td, th {
+    text-align: center;
+}
+
+.propanel .table td, th {
+    vertical-align: middle;
+}
+
+.proshow {
+    margin: 40px 0px 20px 0px;
+}
+
+.proshow_lt .row {
+    padding: 10px 15px 5px 15px;
+}
+
+.proshow_lt img {
+    margin: 20px 10px 20px 0px;
+}
+
+.proshow_lt .col-md-3 {
+    margin: 25px 0px 10px 0px;
+}
+
+.proshow_rt .row {
+    padding: 12px 15px 5px 15px;
+}
+
+.proshow_rt .col-md-6 {
+    margin: 25px 0px 10px 0px;
+}
+
+.form-invest {
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.form-invest .form-control {
+    position: relative;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 2px;
+    font-size: 16px;
+}
+.form-invest .form-control:focus {
+    z-index: 2;
+}
+
+.form-invest input[type='text'] {
+    margin-bottom: 5px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.protab {
+    margin: 25px 10px 20px 10px;
+    padding: 0px 20px 10px 20px;
+}
+
+.protab .row {
+    padding: 25px 0px 25px 0px;
+    margin: 0px;
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+}
+
+.protab .row ul {
+    list-style: decimal;
+    padding-left: 28px;
+}
+
+.protab h4 {
+    color: #285e8e;
+    padding-left: 5px;
+}
+
+.protab p {
+    padding-left: 5px;
+}
+
+.prowindow {
+    margin: 25px 10px 20px 10px;
+    padding: 0px 20px 10px 20px;
+}
+
+.prowindow .row {
+    padding: 25px 0px 25px 0px;
+    margin: 0px;
+    border: 1px solid #dddddd;
 }
