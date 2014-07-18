@@ -17,10 +17,10 @@
             <div class="col-md-9 proshow_lt">
                 <div class="row">
                     <div class="col-md-6 text-left">
-                        <h4>五金商贸企业流动资金贷款（二期）</h4>
+                        <h4>{{ $pro->title }}</h4>
                     </div>
                     <div class="col-md-6 text-right">
-                        <h4>企业编号ZHJ14041200019221</h4>
+                        <h4>{{ $pro->cid }}</h4>
                     </div>
                 </div>
                 <div class="row">
@@ -30,21 +30,21 @@
                     <div class="col-md-8">
                         <div class="row">
                             <div class="col-md-3">
-                                年化收益<br/>15%
+                                年化收益<br/>{{ $pro->rate }}
                             </div>
                             <div class="col-md-3">
                                 期限<br/>
-                                12个月
+                                {{ $pro->duration }}
                             </div>
                             <div class="col-md-3">
                                 金额<br/>
-                                1000万
+                                {{ $pro->amount }}
                             </div>
                             <div class="col-md-3">
                                 进度<br>
                                 <div class="progress" style="margin-bottom: 0px">
                                     <div class="progress-bar progress-bar-info" role="progressbar"
-                                         aria-valuenow=40 aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                         aria-valuenow={{ $pro->collected/$pro->amount*100 }} aria-valuemin="0" aria-valuemax="100" style="width: {{ $pro->collected/$pro->amount*100 }}%">
                                 </div>
                             </div>
                             </div>
@@ -55,7 +55,7 @@
                                     还款方式：按月付息,到期还本
                                 </div>
                                 <div class="row">
-                                    可获利息：1487.67 元/万元
+                                    可获利息： {{($pro->rate-1.3)*100}} 元/万元
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -63,7 +63,7 @@
                                     投资当日( {{ Date('Y-m-d') }})起息
                                 </div>
                                 <div class="row">
-                                    还本日期 2015-07-03
+                                    还本日期 {{ $pro->etime }}
                                 </div>
                             </div>
                         </div>
@@ -85,7 +85,7 @@
                 <div class="row">
                     <div class="col-md-6 text-left">
                         可投金额<br/>
-                         60万9千元
+                         {{ $pro->amount-$pro->collected}}万元
                     </div>
                     <div class="col-md-6 text-right">
                         剩余时间<br/>
@@ -102,8 +102,6 @@
                         {{ Form::submit('立即投资', array('class' => 'btn btn-primary btn-block')) }}
                         {{ Form::close() }}
                     </div>
-
-
 
                 </div>
 

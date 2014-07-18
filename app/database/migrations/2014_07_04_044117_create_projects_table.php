@@ -25,6 +25,7 @@ class CreateProjectsTable extends Migration {
             $table->timestamp('expiration');
             $table->unsignedBigInteger('collected');
             $table->tinyInteger('duration');
+            $table->tinyInteger('returned');
             $table->timestamp('stime');
             $table->timestamp('etime');
 			$table->timestamps();

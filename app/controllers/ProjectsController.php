@@ -45,7 +45,11 @@ class ProjectsController extends \BaseController {
 	public function show($id)
 	{
 		//
-        return View::make('homes.project');
+        $pro = Project::find($id);
+        $pf = Profile::where('pid', '=', $id)->get();
+        $rc = Record::where('pid', '=', $id)->paginate(15);
+
+        return View::make('homes.project', array('pro' => $pro, 'pf' => $pf, 'rc' => $rc));
 	}
 
 
@@ -92,5 +96,7 @@ class ProjectsController extends \BaseController {
 
         return View::make('homes.licai', array( 'pros' => $pros));
     }
+
+
 
 }
